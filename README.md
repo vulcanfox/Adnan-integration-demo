@@ -8,7 +8,7 @@ The infrastructure code for this in this repo. For a full CI/CD deployment guide
 ![Workflow Diagram](./images/diagram.png)
 
 ### 1. Request Initiation (logic app using API trigger)
-It all starts when an external system or user sends a request to a publicly exposed endpoint (for example, an Azure API Management Endpoint) that triggers a Logic App HTTP Trigger.
+It all starts when an external system or user sends a request to a publicly exposed endpoint (I my own used an Azure API Management Endpoint) that triggers a Logic App HTTP Trigger.
 This Logic App acts as the entry point to the process. Upon receiving the message payload, its http trigger sends the data into a Service Bus Topic.
 Using a topic instead of a queue enables flexible message distribution, allowing multiple subscribers to independently consume the same message if needed in the future (we just need one for now).
 
