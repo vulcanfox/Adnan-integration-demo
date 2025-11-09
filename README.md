@@ -1,7 +1,7 @@
 Here, I will describe an event-driven architecture built using Azure integration services 
 to automate new client onboarding. This uses Azure Service Bus, Azure Functions, Azure Blob Storage, and Azure Logic Apps to create a fully automated pipeline from receiving a request to delivering a generated PDF via email.
 
-The infrastructure code for this in this repo. 
+The infrastructure code for this in this repo. For a full CI/CD deployment guide that covers multiple environments, automated build workflows, includig policy as code (PaC) for compliance checks that could be applied to this, see my much more detailed guide on [Operationalising infrastructure for enterprise-grade machine learning]( https://github.com/vulcanfox/aks-demo?tab=readme-ov-file#operationalising-infrastructure-for-enterprise-grade-machine-learning-using-kubernetes-and-terraform---) .
 
 ## Architecture and Workflow
 
